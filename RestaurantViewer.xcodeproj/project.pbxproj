@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		82945EF22504045100B0D172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945EF12504045100B0D172 /* AppDelegate.swift */; };
 		82945EF42504045100B0D172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945EF32504045100B0D172 /* SceneDelegate.swift */; };
-		82945EF62504045100B0D172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945EF52504045100B0D172 /* ViewController.swift */; };
 		82945EF92504045100B0D172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82945EF72504045100B0D172 /* Main.storyboard */; };
 		82945EFB2504045200B0D172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82945EFA2504045200B0D172 /* Assets.xcassets */; };
 		82945EFE2504045200B0D172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82945EFC2504045200B0D172 /* LaunchScreen.storyboard */; };
 		82945F092504045200B0D172 /* RestaurantViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F082504045200B0D172 /* RestaurantViewerTests.swift */; };
 		82945F142504045200B0D172 /* RestaurantViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F132504045200B0D172 /* RestaurantViewerUITests.swift */; };
+		82945F28250404DE00B0D172 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F27250404DE00B0D172 /* Restaurant.swift */; };
+		82945F2A2504080E00B0D172 /* YelpBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F292504080E00B0D172 /* YelpBusiness.swift */; };
+		82945F2C25040E6600B0D172 /* RestuarantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F2B25040E6600B0D172 /* RestuarantsViewController.swift */; };
+		82945F2E25040ED400B0D172 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F2D25040ED400B0D172 /* RestaurantsViewModel.swift */; };
+		82945F3125040F5B00B0D172 /* YelpBusinessesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F3025040F5B00B0D172 /* YelpBusinessesServices.swift */; };
+		82945F33250411CA00B0D172 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F32250411CA00B0D172 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		82945EEE2504045100B0D172 /* RestaurantViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82945EF12504045100B0D172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82945EF32504045100B0D172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82945EF52504045100B0D172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82945EF82504045100B0D172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82945EFA2504045200B0D172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82945EFD2504045200B0D172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		82945F0F2504045200B0D172 /* RestaurantViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82945F132504045200B0D172 /* RestaurantViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewerUITests.swift; sourceTree = "<group>"; };
 		82945F152504045200B0D172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82945F27250404DE00B0D172 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		82945F292504080E00B0D172 /* YelpBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusiness.swift; sourceTree = "<group>"; };
+		82945F2B25040E6600B0D172 /* RestuarantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantsViewController.swift; sourceTree = "<group>"; };
+		82945F2D25040ED400B0D172 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
+		82945F3025040F5B00B0D172 /* YelpBusinessesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusinessesServices.swift; sourceTree = "<group>"; };
+		82945F32250411CA00B0D172 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				82945EF02504045100B0D172 /* RestaurantViewer */,
+				82945F252504048E00B0D172 /* Resources */,
 				82945F072504045200B0D172 /* RestaurantViewerTests */,
 				82945F122504045200B0D172 /* RestaurantViewerUITests */,
 				82945EEF2504045100B0D172 /* Products */,
@@ -99,12 +110,12 @@
 		82945EF02504045100B0D172 /* RestaurantViewer */ = {
 			isa = PBXGroup;
 			children = (
+				82945F2F25040F0100B0D172 /* Services */,
+				82945F232504047E00B0D172 /* Model */,
+				82945F212504046600B0D172 /* View */,
+				82945F242504048700B0D172 /* ViewModel */,
 				82945EF12504045100B0D172 /* AppDelegate.swift */,
 				82945EF32504045100B0D172 /* SceneDelegate.swift */,
-				82945EF52504045100B0D172 /* ViewController.swift */,
-				82945EF72504045100B0D172 /* Main.storyboard */,
-				82945EFA2504045200B0D172 /* Assets.xcassets */,
-				82945EFC2504045200B0D172 /* LaunchScreen.storyboard */,
 				82945EFF2504045200B0D172 /* Info.plist */,
 			);
 			path = RestaurantViewer;
@@ -126,6 +137,66 @@
 				82945F152504045200B0D172 /* Info.plist */,
 			);
 			path = RestaurantViewerUITests;
+			sourceTree = "<group>";
+		};
+		82945F212504046600B0D172 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82945F262504049D00B0D172 /* UI */,
+				82945F222504047100B0D172 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82945F222504047100B0D172 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				82945F2B25040E6600B0D172 /* RestuarantsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82945F232504047E00B0D172 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82945F27250404DE00B0D172 /* Restaurant.swift */,
+				82945F292504080E00B0D172 /* YelpBusiness.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82945F242504048700B0D172 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				82945F2D25040ED400B0D172 /* RestaurantsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		82945F252504048E00B0D172 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82945EFA2504045200B0D172 /* Assets.xcassets */,
+				82945F32250411CA00B0D172 /* Keys.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82945F262504049D00B0D172 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				82945EF72504045100B0D172 /* Main.storyboard */,
+				82945EFC2504045200B0D172 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		82945F2F25040F0100B0D172 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82945F3025040F5B00B0D172 /* YelpBusinessesServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82945EF62504045100B0D172 /* ViewController.swift in Sources */,
+				82945F28250404DE00B0D172 /* Restaurant.swift in Sources */,
+				82945F33250411CA00B0D172 /* Keys.swift in Sources */,
+				82945F2E25040ED400B0D172 /* RestaurantsViewModel.swift in Sources */,
+				82945F2C25040E6600B0D172 /* RestuarantsViewController.swift in Sources */,
+				82945F3125040F5B00B0D172 /* YelpBusinessesServices.swift in Sources */,
 				82945EF22504045100B0D172 /* AppDelegate.swift in Sources */,
 				82945EF42504045100B0D172 /* SceneDelegate.swift in Sources */,
+				82945F2A2504080E00B0D172 /* YelpBusiness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
