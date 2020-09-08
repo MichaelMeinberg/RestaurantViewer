@@ -32,7 +32,9 @@ class RestaurantsViewModel {
              
                         for business in businessesArray  {
                             let yelpBusiness = YelpBusiness(business: business)
-                            self.getImage(business: yelpBusiness)
+//                            self.getImage(business: yelpBusiness, completionHandler: { (success) in
+//                                // image already updated, nothing to do.
+//                            })
                             self.restaurants.append(yelpBusiness)
                             
                             print("Business: \(yelpBusiness.description)")
@@ -46,10 +48,13 @@ class RestaurantsViewModel {
         })
     }
     
-    func getImage(business: YelpBusiness)  {
+    func getImage(business: YelpBusiness, completionHandler: @escaping (Bool) -> Void)   {
         YelpBusinessesServices().getImageFromURL(urlStr: business.imageURL) { (imageData, error) in
             if let imageData = imageData {
                 business.image = UIImage(data: imageData) ?? UIImage()
+                completionHandler(true)
+            } else {
+                completionHandler(false)
             }
         }
     }

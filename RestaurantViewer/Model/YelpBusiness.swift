@@ -8,10 +8,10 @@
 
 import UIKit
 
-class YelpBusiness {
+@objc class YelpBusiness: NSObject {
     let id, name: String
     let imageURL: String
-    var image: UIImage
+    @objc dynamic var image: UIImage
     let url: String
     let phone: String
     let reviewCount: Int
@@ -48,9 +48,6 @@ class YelpBusiness {
         image = UIImage()
     }
     
-    var description: String {
-        return "\(name)\n\(phone)\n\(reviewCount)\n\(street)\n\(city),\(state) \(zipcode)\nLocation:\(longitude),\(latitude)\n\(imageURL)\n"
-    }
 }
 
 // MARK: - YelpBusinesses

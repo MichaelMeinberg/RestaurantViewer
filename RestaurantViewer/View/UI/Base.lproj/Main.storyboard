@@ -84,6 +84,12 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rGv-G9-26l">
+                                <rect key="frame" x="20" y="143" width="374" height="429"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rGv-G9-26l" secondAttribute="height" multiplier="34:39" id="pz6-ed-g6M"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -92,12 +98,15 @@
                             <constraint firstItem="hHl-b9-8FL" firstAttribute="top" secondItem="okg-D8-CPO" secondAttribute="top" id="1aZ-Gz-c63"/>
                             <constraint firstItem="uFh-s7-GrK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cpt-Mu-RXk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hHl-b9-8FL" secondAttribute="trailing" constant="20" id="LD1-i5-8iG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rGv-G9-26l" secondAttribute="trailing" constant="20" id="Lwz-bd-7OO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="okg-D8-CPO" secondAttribute="bottom" constant="10" id="MYH-8d-hCt"/>
                             <constraint firstItem="uFh-s7-GrK" firstAttribute="top" secondItem="9PZ-M5-Ibc" secondAttribute="bottom" id="Mlg-RK-9Jy"/>
+                            <constraint firstItem="rGv-G9-26l" firstAttribute="top" secondItem="uFh-s7-GrK" secondAttribute="bottom" constant="25" id="Qrh-VC-t20"/>
                             <constraint firstItem="9PZ-M5-Ibc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YQt-bM-KCA"/>
                             <constraint firstItem="CFz-sv-mFe" firstAttribute="top" secondItem="st2-Hc-2eN" secondAttribute="bottom" constant="15" id="YaB-Tq-XAx"/>
                             <constraint firstItem="st2-Hc-2eN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edb-HA-Nov"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uFh-s7-GrK" secondAttribute="trailing" constant="20" id="hds-xv-FoP"/>
+                            <constraint firstItem="rGv-G9-26l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iZD-El-Xod"/>
                             <constraint firstItem="9PZ-M5-Ibc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pg4-2n-UR7"/>
                             <constraint firstItem="okg-D8-CPO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rH0-2e-YLu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9PZ-M5-Ibc" secondAttribute="trailing" constant="20" id="t5o-nB-fEx"/>
@@ -108,6 +117,7 @@
                     <connections>
                         <outlet property="address" destination="uFh-s7-GrK" id="m15-cA-rny"/>
                         <outlet property="businessName" destination="9PZ-M5-Ibc" id="ptU-hR-LUT"/>
+                        <outlet property="mainImageView" destination="rGv-G9-26l" id="WaI-Jw-MRV"/>
                         <outlet property="rating" destination="CFz-sv-mFe" id="uLy-jv-Cwt"/>
                     </connections>
                 </viewController>

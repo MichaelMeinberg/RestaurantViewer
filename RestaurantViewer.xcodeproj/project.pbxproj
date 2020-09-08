@@ -14,7 +14,6 @@
 		82945EFE2504045200B0D172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82945EFC2504045200B0D172 /* LaunchScreen.storyboard */; };
 		82945F092504045200B0D172 /* RestaurantViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F082504045200B0D172 /* RestaurantViewerTests.swift */; };
 		82945F142504045200B0D172 /* RestaurantViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F132504045200B0D172 /* RestaurantViewerUITests.swift */; };
-		82945F28250404DE00B0D172 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F27250404DE00B0D172 /* Restaurant.swift */; };
 		82945F2A2504080E00B0D172 /* YelpBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F292504080E00B0D172 /* YelpBusiness.swift */; };
 		82945F2C25040E6600B0D172 /* RestuarantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F2B25040E6600B0D172 /* RestuarantsViewController.swift */; };
 		82945F2E25040ED400B0D172 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82945F2D25040ED400B0D172 /* RestaurantsViewModel.swift */; };
@@ -53,7 +52,6 @@
 		82945F0F2504045200B0D172 /* RestaurantViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82945F132504045200B0D172 /* RestaurantViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewerUITests.swift; sourceTree = "<group>"; };
 		82945F152504045200B0D172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82945F27250404DE00B0D172 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		82945F292504080E00B0D172 /* YelpBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusiness.swift; sourceTree = "<group>"; };
 		82945F2B25040E6600B0D172 /* RestuarantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantsViewController.swift; sourceTree = "<group>"; };
 		82945F2D25040ED400B0D172 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 		82945F232504047E00B0D172 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				82945F27250404DE00B0D172 /* Restaurant.swift */,
 				82945F292504080E00B0D172 /* YelpBusiness.swift */,
 			);
 			path = Model;
@@ -329,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82945F28250404DE00B0D172 /* Restaurant.swift in Sources */,
 				82945F33250411CA00B0D172 /* Keys.swift in Sources */,
 				82945F2E25040ED400B0D172 /* RestaurantsViewModel.swift in Sources */,
 				82945F2C25040E6600B0D172 /* RestuarantsViewController.swift in Sources */,

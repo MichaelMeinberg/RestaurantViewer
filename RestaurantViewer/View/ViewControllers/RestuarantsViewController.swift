@@ -16,30 +16,19 @@ class RestuarantsViewController: UIViewController, CLLocationManagerDelegate {
     let locManager = CLLocationManager()
     var currentViewIndex = 0
     var limit = 15
-    // var searchDistance = 2000
-    var mainImageView = UIImageView()
+
     @IBOutlet weak var businessName: UILabel!
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var mainImageView: UIImageView!
     
     // MARK: View Controller functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLocationManager()
-        buildUI()
     }
     
-    func buildUI() {
-        // Main Image of the Business
-
-        mainImageView.contentMode = .scaleAspectFit
-        mainImageView.image = UIImage()
-        let viewFrame = self.view.frame
-        mainImageView.frame = CGRect(x: 20, y:  120, width: viewFrame.size.width - 40, height: 300)
-        self.view.addSubview(mainImageView)
-    }
-
     // MARK: IBActions
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
@@ -67,7 +56,14 @@ class RestuarantsViewController: UIViewController, CLLocationManagerDelegate {
         businessName.text = business.name
         rating.text = String(business.rating)
         address.text = "\(business.street) - \(business.city), \(business.state)"
-        mainImageView.image = business.image
+        restaurantVM.getImage(business: business) { [weak self] (success) in
+            guard let self = self else { return }
+            if success {
+                DispatchQueue.main.async {
+                    self.mainImageView.image = business.image
+                }
+            }
+        }
     }
     
     // MARK: Find location of device
@@ -95,7 +91,5 @@ class RestuarantsViewController: UIViewController, CLLocationManagerDelegate {
         location = manager.location!
         updateListOfBusinesses() // This will update the list of of businesses to be local when you move more then 2000 feet, so you get a local list always!
      }
-    
-   
-    
+
 }
